@@ -24499,7 +24499,7 @@
 	      null,
 	      _react2.default.createElement("div", {
 	        id: "render-target",
-	        dangerouslySetInnetHTML: {
+	        dangerouslySetInnerHTML: {
 	          __html: props.content
 	        }
 	      }),

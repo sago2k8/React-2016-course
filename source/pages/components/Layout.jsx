@@ -10,7 +10,7 @@ function Layout(props) {
       <body>
         <div
           id="render-target"
-          dangerouslySetInnetHTML={{
+          dangerouslySetInnerHTML={{
             __html: props.content,
           }}
         />
