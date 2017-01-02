@@ -1,34 +1,35 @@
-import React from 'react';
+import React from 'react'
+import Header from '../../shared/components/Header.jsx'
+
 import {
   Match,
-  Miss,
-  Link,
-} from 'react-router';
+  Miss
+} from 'react-router'
 
-import Home from './Home.jsx';
-import Post from './Post.jsx';
-import Profile from './Profile.jsx';
-import Error404 from './Error404.jsx';
+import Home from './Home.jsx'
+import Post from './Post.jsx'
+import Profile from './Profile.jsx'
+import Error404 from './Error404.jsx'
 
-
-function Pages() {
+function Pages () {
   return (
-    <main role="application">
+    <main role='application'>
       {/* List de artículos */}
+      <Header />
       <Match
-        pattern="/"
+        pattern='/'
         exactly
         component={Home}
       />
       {/* Detalle de artículo */}
       <Match
-        pattern="/post/:id"
+        pattern='/post/:id'
         exactly
         component={Post}
       />
       {/* Perfil de usuario */}
       <Match
-        pattern="/user/:id"
+        pattern='/user/:id'
         exactly
         component={Profile}
       />
@@ -39,4 +40,4 @@ function Pages() {
   )
 }
 
-export default Pages;
+export default Pages

@@ -1,0 +1,10 @@
+{
+    "extends": ["standard", "standard-react"],
+    "plugins": [
+        "standard",
+        "promise",
+        "jsx-a11y",
+        "react",
+        "import"
+    ]
+}
